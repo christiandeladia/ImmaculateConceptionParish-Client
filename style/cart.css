@@ -1,0 +1,169 @@
+/* body {
+  margin:0;
+  padding:0;
+} */
+
+header {
+
+  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:right;
+  padding: 40px 0 0px 0;
+  position: relative;
+  /* background-color: #e0e0e094; */
+}
+
+.header-cart {
+  position: relative;
+  display: flex;
+  margin-left:20px;
+  /* width: 50px; */
+  /* right: 0; */
+  background-color: #ffff;
+  padding: 3px;
+  border-radius: 10px;
+  border: 1.5px solid #039103;
+  
+}
+
+.header-cart img {
+		width: 40px;
+    margin: 0 5px 0 5px;
+	}
+
+.header-cart span {
+  background-color: rgb(32, 128, 0);
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 26px;
+  top: -10px;
+  right: -15px;
+  text-align: center;
+  font-size: 14px;
+  padding-top: 5px;
+  border-radius:100%;
+}
+.header-order {
+  position: relative;
+  display: flex;
+  margin-left:20px;
+  /* width: 50px; */
+  /* right: 0; */
+  background-color: #ffff;
+  padding: 3px;
+  border-radius: 10px;
+  border: 1.5px solid #039103;
+  
+}
+.header-order h5{
+  font-size: 18px;
+  color: rgb(37 141 54);
+  text-align: center;
+  margin: 7px 5px 0 5px;
+}
+.header-order span {
+  background-color: rgb(32, 128, 0);
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 26px;
+  top: -10px;
+  right: -15px;
+  text-align: center;
+  font-size: 14px;
+  padding-top: 5px;
+  border-radius:100%;
+}
+/* .article-holder {
+	margin: 100px auto;
+} */
+
+/* .article-box {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid black;
+  position: relative;
+  border-radius: 6px;
+} */
+
+.article-img {
+  width: 70%;
+}
+
+.add-article {
+  display: block;
+  background-color: darkgreen;
+  padding: 12px 22px;
+  text-align: center;
+  color: #fff;
+  border:none;
+  cursor:pointer;
+  border-radius: 4px;
+  transition: 1s;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.add-article:hover {
+  background-color: #039103;
+}
+/* .add-article {
+  display: block;
+  padding: 5px;
+  color: #fff;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  background: #039103;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 1s;
+} */
+
+.animation-cart {
+	position: fixed;
+	animation-name: example;
+	animation-duration: 2.2s;
+	animation-fill-mode: forwards;
+	z-index: 99999;
+	transform: (scale(0,0));
+}
+
+.search-button i.fas {
+  color: #f5f5f5;
+  /* font-size: 30px; */
+}
+
+@keyframes example {
+	0% {
+		transform: scale(0,0);
+	}
+
+	60% {
+		  transform: scale(1,1);
+
+	   }
+
+	100% {
+		  transform: scale(0,0);
+	}
+}
+
+
+.shake {
+	animation: shake 1s linear both 1s;
+}
+@keyframes shake {
+	0%  { transform: translateY(0dpx) }
+	25% { transform: translateY(-10px) }
+	50% { transform: translateY(2px) }
+	75% { transform: translateY(0px) }
+}

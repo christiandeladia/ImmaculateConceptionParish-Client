@@ -1,0 +1,278 @@
+h1{
+    color: #258d36;
+    text-align: center;
+    margin: 0;
+}
+h2{
+  color: #040404;
+  text-align: center;
+}
+table{
+    text-align: center;
+    width: 94%;
+    padding: 10px;
+    margin: 20px;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: white;
+  }
+table thead{
+    background: white;
+    color: #040404;
+}
+table tbody:last-child td{
+    padding: 5px 0;
+}
+td img{
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+th{
+    min-width: 20px;
+    font-size:14px;
+    padding: 15px
+}
+td {  
+    padding: 10px ;
+    font-size:15px;
+}
+
+.total{
+    margin: 0;
+    text-align: left;
+    color: #002d0a;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.fees{
+    margin: 1px 0 0 0;
+    color: #040404;
+    font-size: 15px;
+}
+.address_button{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.save_address_button{
+    width: 45%;
+    text-align: center;
+    background: #258d36;
+    color: white;
+    font-size: 20px;
+    padding: 7px ;
+    text-decoration: none;
+    border: 5px;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+.delete_address_button{
+  width: 45%;
+  text-align: center;
+  background: #8d2525;
+  color: white;
+  font-size: 20px;
+  padding: 7px ;
+  text-decoration: none;
+  border: 5px;
+  border-radius: 5px; 
+  cursor: pointer;
+}
+.order_button{
+  width: 100%;
+  text-align: center;
+  background: #258d36;
+  color: white;
+  font-size: 20px;
+  margin: 5px 0 0 0;
+  padding: 7px ;
+  text-decoration: none;
+  border: 5px;
+  border-radius: 5px; 
+  cursor: pointer;
+}
+
+.container {
+    width: 70%;
+    min-height: 400px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    margin: auto;
+    margin-top: 5px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #ffff;
+    -webkit-box-shadow: 3px 3px 6px 0px var(--box-shadow-color);
+    -moz-box-shadow: 3px 3px 6px 0px var(--box-shadow-color);
+    -ms-box-shadow: 3px 3px 6px 0px var(--box-shadow-color);
+    -o-box-shadow: 3px 3px 6px 0px var(--box-shadow-color);
+    box-shadow: 3px 3px 6px 0px var(--box-shadow-color);
+    overflow: hidden;
+    flex-direction: column;
+  }
+  @media (min-width: 576px) {
+    .container {
+      flex-direction: row;
+    }
+  }
+
+  .container .form-wapper {
+    flex: 40%;
+    width: 30%;
+    margin: 20px;
+
+  }
+  .container .form-wapper .form-header,
+  .container .form-wapper .form-body {
+    margin-bottom: 20px;
+  }
+  .container .form-wapper .form-header p {
+    font-size: 14px;
+    color: #bbb;
+    margin: 20px 0 0;
+  }
+
+  .container .form-wapper .form-body .input-wrapper {
+    margin-bottom: 20px;
+    position: relative;
+    font-family: 'Montserrat';
+    font-weight: 500;
+  }
+  .container .form-wapper .form-body .input-wrapper > label {
+    display: block;
+    width: 90%;
+    margin: auto auto 5px auto;
+    font-size: 14px;
+    font-weight: 600;
+    
+  }
+  .container .form-wapper .form-body .input-wrapper > input {
+    display: block;
+    width: 90%;
+    margin: auto;
+    height: 39px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #707070;
+    color: var(--text-color);
+    /* background-color: transparent; */
+  }
+/* Hide the default dropdown arrow */
+/* Style for the input wrappers and selects */
+.select-wrapper {
+  display: inline-block !important;
+  width: 45%;
+  margin: auto auto auto 15px;
+  font-size: 14px;
+  font-weight: 1000;
+  height: 39px;
+}
+.select-wrapper > label{
+    display: block;
+    width: 90%;
+    margin: auto auto 5px auto;
+    font-size: 14px;
+    font-weight: 600;
+}
+.container .form-wapper .form-body .select-wrapper {
+  margin-bottom: 15px;
+  position: relative;
+}
+.container .form-wapper .form-body .select-wrapper > input {
+    display: block;
+    width: 90%;
+    margin: auto;
+    height: 39px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #707070;
+    color: var(--text-color);
+    /* background-color: transparent; */
+}
+.selects {
+    width: 90%; /* Adjust the width as needed */
+    font-family: 'Montserrat';
+    font-weight: 500;
+    height: 39px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #707070;
+    color: var(--text-color);
+    background-color: transparent;
+    position: relative;
+}
+
+/* Create a custom dropdown arrow */
+.selects::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid var(--text-color); /* Change this to the color you want */
+    transform: translateY(-50%);
+}
+
+.dropdown_address {
+  display: block;
+  width: 90%;
+  margin: auto;
+  height: 39px;
+  padding: 0 10px 0 10px;
+  border-radius: 5px;
+  border: 1px solid #707070;
+  color: var(--text-color);
+}
+
+  .container .form-wapper .form-body .input-wrapper .icon {
+    position: absolute;
+    bottom: 10px;
+    font-family: 'Montserrat';
+font-weight: 500;
+    right: 10px;
+    font-size: 18px;
+    line-height: 0.8;
+    color: #6b6b6b;
+    z-index: 2;
+    cursor: pointer;
+  }
+  .container .form-wapper .form-body .input-wrapper.more-action {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+  .container .form-wapper .form-body .input-wrapper.more-action label {
+    margin: 0;
+    font-size: 12px;
+  }
+  .container .form-wapper .form-body .input-wrapper.more-action input {
+    vertical-align: middle;
+    margin: 0;
+    margin-right: 10px;
+    width: 17px;
+    height: 17px;
+  }
+ 
+  .back{
+    text-decoration: none;
+    color: black;
+    margin: 30px;
+}
+
+

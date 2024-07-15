@@ -1,0 +1,1 @@
+<?php session_start(); unset( $_SESSION['auth_login'] ); header("location: index.php"); ?>

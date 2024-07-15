@@ -1,0 +1,299 @@
+body{
+    background-color: #ffffffbb ;
+    /* background-image: url('../images/bg_white.jpg'); */
+    font-family: 'Monteserrat';
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+    max-width: 1000px;
+    min-height: 700px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: #035d13 solid 1px;
+    background-color: var(--box-bg-color);
+    border-radius: 15px;
+    -webkit-box-shadow: 3px 3px 6px 0px var(--box-shadow-color);
+    -moz-box-shadow: 3px 3px 6px 0px var(--box-shadow-color);
+    -ms-box-shadow: 3px 3px 6px 0px var(--box-shadow-color);
+    -o-box-shadow: 3px 3px 6px 0px var(--box-shadow-color);
+    box-shadow: 3px 3px 6px 0px var(--box-shadow-color);
+    overflow: hidden;
+    flex-direction: column;
+  }
+  @media (min-width: 576px) {
+    .container {
+      flex-direction: row;
+    }
+  }
+  .container .image-wapper,
+  .container .form-wapper {
+    flex: 0 1 100%;
+    max-width: 100%;
+    padding: 50px 30px 10px 30px;
+  }
+  @media (min-width: 576px) {
+    .container .image-wapper,
+  .container .form-wapper {
+      flex: 0 1 50%;
+      max-width: 50%;
+      background-color: #fff;
+    }
+  }
+  .container .image-wapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .container .image-wapper::before {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #035d13);
+  }
+  .container .image-wapper h1 {
+    align-self: flex-end;
+    font-size: 60px;
+    color: #fff;
+    z-index: 1;
+    margin: 0;
+  }
+  .container .form-wapper .form-header{
+    margin-bottom: 30px;
+  }
+  .container .form-wapper .form-body {
+    margin-bottom: 20px;
+  }
+  .container .form-wapper .form-header h2 {
+    font-size: 30px;
+    margin: 0;
+  }
+  .container .form-wapper .form-header p {
+    font-size: 14px;
+    color: #bbb;
+    margin: 20px 0 0;
+  }
+
+  .container .form-wapper .form-body .input-wrapper {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .container .form-wapper .form-body .select-wrapper {
+    margin-bottom: 25px;
+    position: relative;
+  }
+  .container .form-wapper .form-body .input-wrapper > label {
+    display: block;
+    width: 90%;
+    margin: auto auto 10px auto;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .container .form-wapper .form-body .select-wrapper > label {
+    display: block;
+    width: 90%;
+    margin: auto auto 10px auto;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .container .form-wapper .form-body .input-wrapper > input {
+    display: block;
+    width: 90%;
+    margin: auto;
+    height: 39px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #707070;
+    color: var(--text-color);
+    /* background-color: transparent; */
+  }
+  .container .form-wapper .form-body .select-wrapper > input {
+    display: block;
+    width: 90%;
+    margin: auto;
+    height: 39px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #707070;
+    color: var(--text-color);
+    /* background-color: transparent; */
+}
+  .container .form-wapper .form-body .input-wrapper .icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 18px;
+    line-height: 0.8;
+    color: #6b6b6b;
+    z-index: 2;
+    cursor: pointer;
+  }
+  .container .form-wapper .form-body .input-wrapper.more-action {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+  .container .form-wapper .form-body .input-wrapper.more-action label {
+    margin: 0;
+    font-size: 12px;
+  }
+  .container .form-wapper .form-body .input-wrapper.more-action{
+    vertical-align: middle;
+    margin: 0;
+    margin-right: 10px;
+    width: 17px;
+    height: 17px;
+  }
+
+  a.button {
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 10px 1rem;
+    background-color: var(--main-color);
+    border: unset;
+    background-color: #035d13;
+    border-radius: 5px;
+    color: #ffff;
+    font-size: 1rem;
+    transition: transform .2s;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-align: center;
+}
+  a.button:hover {
+    /* font-weight: bolder; */
+    transform: scale(1.1);
+  }
+  input.button {
+    width: 100%;
+    margin: auto;
+    padding: 10px 1rem;
+    background-color: var(--main-color);
+    border: unset;
+    background-color: #035d13;
+    border-radius: 5px;
+    color: #ffff;
+    font-size: 1rem;
+    transition: transform .2s;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+  input.button:hover {
+    /* font-weight: bolder; */
+    transform: scale(1.1);
+  }
+  .container .form-wapper .form-footer p {
+    font-size: 14px;
+    margin: 0;
+  }
+  .container .form-wapper .form-footer p .icon i {
+    color: var(--main-color);
+    vertical-align: middle;
+  }
+  
+  .gender {
+    display: block;
+    width: 90%;
+    margin: auto;
+    height: 39px;
+    padding: 0 10px 0 10px;
+    border-radius: 5px;
+    border: 1px solid #707070;
+    color: var(--text-color);
+}
+.option{
+  height:400px;
+}
+
+.tacbox {
+  display:block;
+  padding: 8px;
+  margin: 1em;
+  max-width: 800px;
+  font-size: 14px;
+}
+
+/* input {
+  height: 2em;
+  width: 2em;
+  vertical-align: middle;
+} */
+/*
+label {
+  outline: 2px dotted #f00;
+}
+
+/*
+label:after {
+  content: attr(for);
+}*/
+
+.button[disabled] {
+  background-color: rgba(128, 128, 128);
+  pointer-events: none;
+}
+/* .row-wrapper{
+  display: inline-block;
+} */
+
+.rows{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-left: 15px; */
+  /* width: 50%; */
+}
+.rows .input{
+  margin-left: 20px;
+}
+
+.password-input {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-password-icon {
+  cursor: pointer;
+  /* margin-left: 10px; */
+  float: right;
+  margin-left: -25px;
+  margin-top: -25px;
+  padding-right: 30px;
+  position: relative;
+  z-index: 2;
+  color:  black;
+}
+
+.select-wrapper {
+  display: inline-block !important;
+  width: 45%;
+  margin: auto auto auto 15px;
+  font-size: 14px;
+  font-weight: 1000;
+  height: 39px;
+}
+
+.input-wrapper {
+  font-family: 'Montserrat';
+  font-weight: 500;
+}

@@ -1,0 +1,412 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+*{
+  /* margin: 0; */
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: #444;
+  background: #f9f9f9;
+  font-size: 16px;
+  font-family: "PT Sans", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+section {
+  position: relative;
+  width: 100%;
+}
+
+/*##### HERO SECTION #####*/
+.hero {
+  height: 40%;
+  /* Credit image : Unsplash - Luke Chesser */
+  background-image: url("../image/banner_about.png");
+  background-size: cover;
+  background-position: center;
+}
+.hero .content {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+.hero .content .header {
+  position: absolute;
+  top: 55%;
+  width: 100%;
+  -webkit-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+  text-align: center;
+  opacity: 0;
+}
+.hero .content .header h1 {
+  color: #fff;
+  font-size: 2.5em;
+  text-shadow: 0px 2px 3px #2d2d2d;
+}
+
+/*##### ABOUT MYSELF SECTION #####*/
+.about-myself {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 50px;
+  height: 80%;
+}
+.about-myself .content {
+  text-align: center;
+  font-size: 20px;
+}
+.about-myself .content h2 {
+  color: #3d3d3d;
+  font-size: 3em;
+  margin: 0 0 20px 0;
+  /* font-family: "Playfair Display", serif; */
+  font-weight: 700;
+  line-height: 1.2;
+  color: #7b9d6f;
+  -webkit-transform: translateY(-50px) scale(0);
+  transform: translateY(-50px) scale(0);
+  -webkit-transition: transform 0.7s;
+  -moz-transition: transform 0.7s;
+  transition: transform 0.7s;
+}
+.about-myself .content .aboutTitleVisible {
+  -webkit-transform: translateY(0px) scale(1);
+  transform: translateX(0px) scale(1);
+}
+.about-myself .content p span {
+  color: #c0392b;
+  font-weight: bold;
+}
+.about-myself .content p {
+  WIDTH: 80%;
+  TEXT-ALIGN: justify;
+  ALIGN-ITEMS: CENTER;
+  MARGIN: auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+
+/*##### PORTFOLIO SECTION #####*/
+.portfolio {
+  /* background: #f9f9f9; */
+  padding: 80px 0;
+  width: 90%;
+  margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio .content h1 {
+  text-align: center;
+  font-size: 3.5em;
+  margin: 0 0 50px 0;
+  /* font-family: "Playfair Display", serif; */
+  font-weight: 700;
+  line-height: 1.2;
+  color: #7b9d6f;
+}
+.portfolio .content .projects {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .portfolio .content .projects .column {
+    width: 50%;
+    padding: 0 15px;
+  }
+  
+  .portfolio .content .projects .project {
+    margin-bottom: 30px;
+  }
+  
+/* .portfolio .content .projects .project {
+  color: #fff;
+  position: relative;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  overflow: hidden;
+} */
+.portfolio .content .projects .project:last-child {
+  margin-bottom: 0;
+}
+.portfolio .content .projects .project .project-image img {
+  width: 100%;
+}
+.portfolio .content .projects .project .project-title {
+  color: #3c3c3c;
+  padding: 10px 0;
+}
+.portfolio .content .projects .project .project-description {
+  color: #444;
+}
+
+
+
+/* ############################
+        RESPONSIVE
+############################### */
+@media screen and (min-width: 480px) {
+  .skills .content .tools-knowledge-wrapper .tools-wrapper,
+.skills .content .tools-knowledge-wrapper .knowledge-wrapper {
+    width: 50%;
+    float: left;
+    padding: 0;
+  }
+  .skills .content .tools-knowledge-wrapper .tools-wrapper ul,
+.skills .content .tools-knowledge-wrapper .knowledge-wrapper ul {
+    margin-left: 0;
+  }
+  .skills .content .clear {
+    clear: both;
+  }
+}
+@media screen and (min-width: 640px) {
+  .about-myself {
+    padding: 100px 40px;
+  }
+
+  .skills {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .skills .content .development-wrapper {
+    width: 600px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .skills .content .tools-knowledge-wrapper {
+    width: 600px;
+    margin: auto;
+  }
+
+  .contact .content .socials {
+    width: 600px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 960px) {
+
+  .skills {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .skills .content {
+    max-width: 1100px;
+    margin: auto;
+  }
+  .skills .content .development-wrapper,
+.skills .content .tools-knowledge-wrapper {
+    float: left;
+  }
+  .skills .content .development-wrapper {
+    margin-bottom: 0;
+    width: 60%;
+  }
+  .skills .content .tools-knowledge-wrapper {
+    width: 40%;
+    margin-top: 60px;
+  }
+  .skills .content .tools-knowledge-wrapper .tools-wrapper,
+.skills .content .tools-knowledge-wrapper .knowledge-wrapper {
+    float: none;
+    margin: auto;
+  }
+  .skills .content .tools-knowledge-wrapper .tools-wrapper {
+    margin-bottom: 30px;
+  }
+
+  .portfolio .content .projects .project {
+    position: relative;
+    margin: auto;
+    margin-bottom: 3%;
+    width: 680px;
+    height: 450px;
+    overflow: hidden;
+  }
+  .portfolio .content .projects .project:hover .project-image {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  .portfolio .content .projects .project:hover .project-title, .portfolio .content .projects .project .project-description {
+    opacity: 1;
+  }
+  .portfolio .content .projects .project:hover .project-image {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  .portfolio .content .projects .project:hover .project-title, .portfolio .content .projects .project:hover .project-description {
+    opacity: 1;
+  }
+  .portfolio .content .projects .project .project-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: transform 0.5s ease;
+    transition: transform 0.5s ease;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    z-index: 3;
+    overflow: hidden;
+  }
+  .portfolio .content .projects .project .project-image img {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+  }
+  .portfolio .content .projects .project .project-title,
+.portfolio .content .projects .project .project-description {
+    position: absolute;
+    height: 50%;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s linear;
+    transition: opacity 0.3s linear;
+    overflow: hidden;
+  }
+  .portfolio .content .projects .project .project-title {
+    width: 50%;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+    display: table;
+  }
+  .portfolio .content .projects .project .project-title h2 {
+    font-size: 2em;
+    text-decoration: underline;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .portfolio .content .projects .project .project-description {
+    width: 100%;
+    top: 50%;
+    left: 0;
+    padding: 25px 10px;
+    text-align: left;
+  }
+}
+
+
+
+/* events */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+.flex-container {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3rem;
+  width: 100%;
+  flex-wrap: wrap; /* Added */
+}
+
+.card {
+  width: 23%; /* Adjusted width to accommodate for gap */
+  background-color: #fff;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.6);
+  border-radius: 0.75rem;
+  margin-bottom: 2rem; /* Added margin between cards */
+  min-height: 600px;
+}
+
+.card-header {
+  width: 100%;
+}
+
+.card-header img {
+  width: 100%;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.card-content span {
+  background-color: #51adc4;
+  color: #fff;
+  font-weight: 300;
+  font-size: 10px;
+  padding: 0.5rem 0.75rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+}
+
+.card-content .title {
+  margin: 1rem 0 0.75rem 0;
+  text-decoration: none;
+  color: black;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-content p {
+  font-size: 14px;
+  min-height: 60px
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.card-footer img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card-footer .author {
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.author p {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.author small {
+  font-size: 12px;
+}

@@ -1,0 +1,104 @@
+
+div.gallery {
+  border: 1px solid #ccc;
+  /* border-bottom: #035d13 9px solid; */
+  /* border-radius: 20px; */
+  background-color: #fff;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+/* div.gallery:hover {
+  border: 3px solid #14c304;
+  
+} */
+
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+  
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.bg{
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.column1 {
+  float: left;
+  width: 50%;
+  text-align: center;
+  font-size: 13px;
+  padding: 20px 0px;
+  height: 400px;
+}
+.column1 p {
+  font-size: 11px;
+}
+.column3 p {
+  font-size: 11px;
+}
+.column {
+  width: 100%;
+  padding: 10px;
+  height: 300px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row_weddingbanns{
+  width: 90%;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.view_button{
+  display: block;
+  text-align:center; 
+  border: 2px solid #035d13; 
+  border-radius: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #035d13;
+  background-color: #fff;
+  width: 8%;
+  padding: 0.8rem 1.5rem;
+}
+
+.view_button:hover{
+  color: #fff;
+  /* border: 2px solid #035d13;  */
+  background-color: #035d13;
+}

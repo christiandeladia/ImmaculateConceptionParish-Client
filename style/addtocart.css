@@ -1,0 +1,99 @@
+/* h1{
+    color: #350c01;
+}
+#table{
+    overflow: auto;
+}
+table{
+    padding: 20px;
+    max-width: 100%;
+    text-align: center;
+    min-width: 50rem;
+    width: 100%;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: white;
+  }
+table thead{
+    background: white;
+    color: #350c01;
+}
+table tbody:last-child td{
+    padding: 19px 0
+}
+td img{
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+th{
+    min-width: 3rem;
+    font-size:14px;
+    padding: 15px 10px;
+}
+td {  
+    padding: 10px ;
+    font-size:13px;
+}
+.delete_button{
+    background: #350c01;
+    color: white;
+    padding: 10px ;
+    text-decoration: none;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+.update_button{
+    color: #350c01;
+    border: 1px solid #350c01;
+    background: #fff;
+    padding: 10px ;
+    border-radius: 5px;
+    text-decoration: none; 
+    cursor: pointer;
+}
+
+.total{
+    text-align: right;
+    color: #350c01;
+    font-size: 15px;
+    margin-right: 150px;
+}
+
+.checkout_button{
+    float: right;
+    width: 200px;
+    text-align: center;
+    background: #350c01;
+    color: white;
+    font-size: 15px;
+    margin-right: 70px;
+    padding: 15px ;
+    text-decoration: none;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+.button{
+    float: right;
+    width: 200px;
+    text-align: center;
+    background: #350c01;
+    color: white;
+    font-size: 15px;
+    margin-right: 50px;
+    padding: 15px ;
+    text-decoration: none;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+.back{
+    text-decoration: none;
+    color: black;
+    margin: 30px;
+}
+h1{
+    text-align: center;
+} */
